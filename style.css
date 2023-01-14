@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&family=Poppins:wght@500&family=Public+Sans:wght@300;400&family=Work+Sans&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    margin-top: 50px;
+}
+
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 34px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 70px 0;
+    gap: 130px;
+}
+
+.banner-header {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+
+.banner-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+    margin: 16px 0;
+    width: 505px;
+}
+
+.banner-btn {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+}
+
+.img-bg {
+    position: relative;
+    width: 475px;
+    height: 475px;
+    background-image: url('./images/circle-design.svg');
+}
+
+.img-top {
+    position: relative;
+    top: 30px;
+    width: 440px;
+    height: 414px;
+    background-image: url('./images/main-camera.png');
+}
+
+
+
+
+
+
+/* X - Large */
+
+@media screen and (max-width:1250px) and (min-width:993px) {
+    body {
+        width: 90%;
+    }
+
+    .banner {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .banner-img {
+        transform: scale(.8, .8);
+    }
+
+    .banner-content {
+        width: 490px;
+    }
+}
+
+/* Large */
+
+@media screen and (max-width:992px) and (min-width:769px) {
+    body {
+        width: 90%;
+    }
+
+    .banner {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .banner-img {
+        transform: scale(.8, .8);        
+        margin-left: -60px;
+    }
+
+    .banner-content, .banner-content p {
+        width: 350px;
+    }
+}
+
+/* Medium */
+
+@media screen and (max-width:768px) and (min-width:577px) {
+    body {
+        width: 90%;
+    }
+}
+
+/* Small */
+
+@media screen and (max-width:576px) {
+    body {
+        /* width: 90%; */
+    }
+}
