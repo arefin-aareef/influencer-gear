@@ -256,8 +256,14 @@ body {
 
     .collection-list {
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
 }
+
+
+
+
+
 
 /* Medium */
 
